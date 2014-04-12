@@ -28,6 +28,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    NSLog(@"1E21BCE0-7655-4647-B492-A3F8DE2F9A02");
+    
     // 生成したUUIDからNSUUIDを作成
     self.proximityUUID = [[NSUUID alloc] initWithUUIDString:@"1E21BCE0-7655-4647-B492-A3F8DE2F9A02"];
     // CBPeripheralManagerを作成
