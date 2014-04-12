@@ -14,13 +14,13 @@
 		4AFD29FF18F9299900BA23BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFD29FE18F9299900BA23BE /* main.m */; };
 		4AFD2A0318F9299900BA23BE /* VBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFD2A0218F9299900BA23BE /* VBAppDelegate.m */; };
 		4AFD2A0618F9299900BA23BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AFD2A0418F9299900BA23BE /* Main.storyboard */; };
-		4AFD2A0918F9299900BA23BE /* VBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFD2A0818F9299900BA23BE /* VBViewController.m */; };
 		4AFD2A0B18F9299900BA23BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AFD2A0A18F9299900BA23BE /* Images.xcassets */; };
 		4AFD2A1218F9299900BA23BE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AFD2A1118F9299900BA23BE /* XCTest.framework */; };
 		4AFD2A1318F9299900BA23BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AFD29F218F9299900BA23BE /* Foundation.framework */; };
 		4AFD2A1418F9299900BA23BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AFD29F618F9299900BA23BE /* UIKit.framework */; };
 		4AFD2A1C18F9299900BA23BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4AFD2A1A18F9299900BA23BE /* InfoPlist.strings */; };
 		4AFD2A1E18F9299900BA23BE /* VirtualBeaconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFD2A1D18F9299900BA23BE /* VirtualBeaconTests.m */; };
+		4AFD2A2918F92D5700BA23BE /* VBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFD2A2818F92D5700BA23BE /* VBTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +45,14 @@
 		4AFD2A0118F9299900BA23BE /* VBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VBAppDelegate.h; sourceTree = "<group>"; };
 		4AFD2A0218F9299900BA23BE /* VBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VBAppDelegate.m; sourceTree = "<group>"; };
 		4AFD2A0518F9299900BA23BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4AFD2A0718F9299900BA23BE /* VBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VBViewController.h; sourceTree = "<group>"; };
-		4AFD2A0818F9299900BA23BE /* VBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VBViewController.m; sourceTree = "<group>"; };
 		4AFD2A0A18F9299900BA23BE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4AFD2A1018F9299900BA23BE /* VirtualBeaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VirtualBeaconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AFD2A1118F9299900BA23BE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4AFD2A1918F9299900BA23BE /* VirtualBeaconTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VirtualBeaconTests-Info.plist"; sourceTree = "<group>"; };
 		4AFD2A1B18F9299900BA23BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4AFD2A1D18F9299900BA23BE /* VirtualBeaconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VirtualBeaconTests.m; sourceTree = "<group>"; };
+		4AFD2A2718F92D5700BA23BE /* VBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBTableViewController.h; sourceTree = "<group>"; };
+		4AFD2A2818F92D5700BA23BE /* VBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +115,8 @@
 				4AFD2A0118F9299900BA23BE /* VBAppDelegate.h */,
 				4AFD2A0218F9299900BA23BE /* VBAppDelegate.m */,
 				4AFD2A0418F9299900BA23BE /* Main.storyboard */,
-				4AFD2A0718F9299900BA23BE /* VBViewController.h */,
-				4AFD2A0818F9299900BA23BE /* VBViewController.m */,
+				4AFD2A2718F92D5700BA23BE /* VBTableViewController.h */,
+				4AFD2A2818F92D5700BA23BE /* VBTableViewController.m */,
 				4AFD2A0A18F9299900BA23BE /* Images.xcassets */,
 				4AFD29F918F9299900BA23BE /* Supporting Files */,
 			);
@@ -251,7 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AFD2A0318F9299900BA23BE /* VBAppDelegate.m in Sources */,
-				4AFD2A0918F9299900BA23BE /* VBViewController.m in Sources */,
+				4AFD2A2918F92D5700BA23BE /* VBTableViewController.m in Sources */,
 				4AFD29FF18F9299900BA23BE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,6 +380,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VirtualBeacon/VirtualBeacon-Prefix.pch";
 				INFOPLIST_FILE = "VirtualBeacon/VirtualBeacon-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -393,6 +394,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VirtualBeacon/VirtualBeacon-Prefix.pch";
 				INFOPLIST_FILE = "VirtualBeacon/VirtualBeacon-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
