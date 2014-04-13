@@ -19,9 +19,15 @@
 @property (weak, nonatomic) IBOutlet UISwitch *firstSwitch;
 @property (weak, nonatomic) IBOutlet UISwitch *secondSwitch;
 @property (weak, nonatomic) IBOutlet UISwitch *thirdSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *fourthSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *fifthSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *sixthSwitch;
 
 - (IBAction)didFirstSwitchValueChange:(id)sender;
 - (IBAction)didSecondSwitchValueChanged:(id)sender;
 - (IBAction)didThirdSwitchValueChanged:(id)sender;
+- (IBAction)didFourthSwitchValueChange:(id)sender;
+- (IBAction)didFifthSwitchValueChanged:(id)sender;
+- (IBAction)didSixthSwitchValueChanged:(id)sender;
 
 @end

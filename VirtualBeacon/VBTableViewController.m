@@ -130,6 +130,9 @@
         [self startAdvertising:1];
         [self.secondSwitch setOn:NO];
         [self.thirdSwitch setOn:NO];
+        [self.fourthSwitch setOn:NO];
+        [self.fifthSwitch setOn:NO];
+        [self.sixthSwitch setOn:NO];
     } else {
         [self.manager stopAdvertising];
     }
@@ -140,6 +143,9 @@
         [self startAdvertising:2];
         [self.firstSwitch setOn:NO];
         [self.thirdSwitch setOn:NO];
+        [self.fourthSwitch setOn:NO];
+        [self.fifthSwitch setOn:NO];
+        [self.sixthSwitch setOn:NO];
     } else {
         [self.manager stopAdvertising];
     }
@@ -150,6 +156,48 @@
         [self startAdvertising:3];
         [self.firstSwitch setOn:NO];
         [self.secondSwitch setOn:NO];
+        [self.fourthSwitch setOn:NO];
+        [self.fifthSwitch setOn:NO];
+        [self.sixthSwitch setOn:NO];
+    } else {
+        [self.manager stopAdvertising];
+    }
+}
+
+- (IBAction)didFourthSwitchValueChange:(id)sender {
+    if ([self.fourthSwitch isOn]) {
+        [self startAdvertising:4];
+        [self.firstSwitch setOn:NO];
+        [self.secondSwitch setOn:NO];
+        [self.thirdSwitch setOn:NO];
+        [self.fifthSwitch setOn:NO];
+        [self.sixthSwitch setOn:NO];
+    } else {
+        [self.manager stopAdvertising];
+    }
+}
+
+- (IBAction)didFifthSwitchValueChanged:(id)sender {
+    if ([self.fifthSwitch isOn]) {
+        [self startAdvertising:5];
+        [self.firstSwitch setOn:NO];
+        [self.secondSwitch setOn:NO];
+        [self.thirdSwitch setOn:NO];
+        [self.fourthSwitch setOn:NO];
+        [self.sixthSwitch setOn:NO];
+    } else {
+        [self.manager stopAdvertising];
+    }
+}
+
+- (IBAction)didSixthSwitchValueChanged:(id)sender {
+    if ([self.sixthSwitch isOn]) {
+        [self startAdvertising:6];
+        [self.firstSwitch setOn:NO];
+        [self.secondSwitch setOn:NO];
+        [self.thirdSwitch setOn:NO];
+        [self.fifthSwitch setOn:NO];
+        [self.fourthSwitch setOn:NO];
     } else {
         [self.manager stopAdvertising];
     }
